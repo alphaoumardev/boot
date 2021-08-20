@@ -17,6 +17,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Transient;
+import java.time.LocalDate;
 
 @Entity
 @RequiredArgsConstructor
@@ -34,4 +35,6 @@ public class Student
     private int age;
 
 
+    public Student(long id, String alphaOumar, String email, LocalDate now) {
+    }
 }
